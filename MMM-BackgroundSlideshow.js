@@ -20,7 +20,7 @@ Module.register('MMM-BackgroundSlideshow', {
     // do not recurse into these subdirectory names when scanning.
     excludePaths: ['@eaDir'],
     // the speed at which to switch between images, in milliseconds
-    slideshowSpeed: 60 * 1000,
+    slideshowSpeed: 3 * 1000,
     // if true randomize image order, otherwise use sortImagesBy and sortImagesDescending
     randomizeImageOrder: true,
     // how to sort images: name, random, created, modified
@@ -44,7 +44,7 @@ Module.register('MMM-BackgroundSlideshow', {
     // the sizing of the background image
     // cover: Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges
     // contain: Resize the background image to make sure the image is fully visible
-    backgroundSize: 'cover', // cover or contain
+    backgroundSize: 'contain', // cover or contain
     // if backgroundSize contain, determine where to zoom the picture. Towards top, center or bottom
     backgroundPosition: 'center', // Most useful options: "top" or "center" or "bottom"
     // transition from one image to the other (may be a bit choppy on slower devices, or if the images are too big)
@@ -62,7 +62,7 @@ Module.register('MMM-BackgroundSlideshow', {
     // the direction the gradient goes, vertical, horizontal, both or radial
     gradientDirection: 'vertical',
     // Whether to scroll larger pictures rather than cut them off
-    backgroundAnimationEnabled: 60 * 1000,
+    backgroundAnimationEnabled: false,
     // How long the scrolling animation should take - if this is more than slideshowSpeed, then images do not scroll fully.
     // If it is too fast, then the image may apear gittery. For best result, by default we match this to slideshowSpeed.
     // For now, it is not documented and will default to match slideshowSpeed.
@@ -78,7 +78,7 @@ Module.register('MMM-BackgroundSlideshow', {
     transitionTimingFunction: 'cubic-bezier(.17,.67,.35,.96)',
     animations: ['slide'], // 'zoomOut', 'zoomIn'
     changeImageOnResume: false,
-    resizeImages: false,
+    resizeImages: true,
     maxWidth: 1920,
     maxHeight: 1080,
     // remove the file extension from image name
