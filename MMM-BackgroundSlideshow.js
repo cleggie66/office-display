@@ -22,7 +22,7 @@ Module.register('MMM-BackgroundSlideshow', {
     // the speed at which to switch between images, in milliseconds
     slideshowSpeed: 60 * 1000,
     // if true randomize image order, otherwise use sortImagesBy and sortImagesDescending
-    randomizeImageOrder: false,
+    randomizeImageOrder: true,
     // how to sort images: name, random, created, modified
     sortImagesBy: 'created',
     // whether to sort in ascending (default) or descending order
@@ -51,26 +51,18 @@ Module.register('MMM-BackgroundSlideshow', {
     transitionImages: false,
     // the gradient to make the text more visible
     gradient: [
-      'rgba(0, 0, 0, 0.75) 0%',
-      'rgba(0, 0, 0, 0) 40%',
-      'rgba(0, 0, 0, 0) 80%',
-      'rgba(0, 0, 0, 0.75) 100%'
+     
     ],
     horizontalGradient: [
-      'rgba(0, 0, 0, 0.75) 0%',
-      'rgba(0, 0, 0, 0) 40%',
-      'rgba(0, 0, 0, 0) 80%',
-      'rgba(0, 0, 0, 0.75) 100%'
+    
     ],
     radialGradient: [
-      'rgba(0,0,0,0) 0%',
-      'rgba(0,0,0,0) 75%',
-      'rgba(0,0,0,0.25) 100%'
+    
     ],
     // the direction the gradient goes, vertical, horizontal, both or radial
     gradientDirection: 'vertical',
     // Whether to scroll larger pictures rather than cut them off
-    backgroundAnimationEnabled: false,
+    backgroundAnimationEnabled: 60 * 1000,
     // How long the scrolling animation should take - if this is more than slideshowSpeed, then images do not scroll fully.
     // If it is too fast, then the image may apear gittery. For best result, by default we match this to slideshowSpeed.
     // For now, it is not documented and will default to match slideshowSpeed.
@@ -84,7 +76,7 @@ Module.register('MMM-BackgroundSlideshow', {
       'opacity'
     ],
     transitionTimingFunction: 'cubic-bezier(.17,.67,.35,.96)',
-    animations: ['slide', 'zoomOut', 'zoomIn'],
+    animations: ['slide'], // 'zoomOut', 'zoomIn'
     changeImageOnResume: false,
     resizeImages: false,
     maxWidth: 1920,
