@@ -12,7 +12,7 @@
  * see https://docs.magicmirror.builders/configuration/introduction.html#enviromnent-variables
  */
 let config = {
-	address: 'localhost', // Address to listen on, can be:
+	address: "localhost",	// Address to listen on, can be:
 	// - "localhost", "127.0.0.1", "::1" to listen on loopback interface
 	// - another specific IPv4/6 to listen on a specific interface
 	// - "0.0.0.0", "::" to listen on any interface
@@ -37,74 +37,74 @@ let config = {
 	units: "metric",
 
 	modules: [
-		{
-			module: "alert",
-		},
-		{
-			module: "updatenotification",
-			position: "top_bar"
-		},
-		{
-			module: "clock",
-			position: "top_left"
-		},
-		{
-			module: "calendar",
-			header: "US Holidays",
-			position: "top_left",
-			config: {
-				calendars: [
-					{
-						fetchInterval: 7 * 24 * 60 * 60 * 1000,
-						symbol: "calendar-check",
-						url: "https://ics.calendarlabs.com/76/mm3137/US_Holidays.ics"
-					}
-				]
-			}
-		},
-		{
-			module: "compliments",
-			position: "lower_third"
-		},
-		{
-			module: "weather",
-			position: "top_right",
-			config: {
-				weatherProvider: "openweathermap",
-				type: "current",
-				location: "Chicago",
-				locationID: "4887398", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-				apiKey: "ac3461c3eaa4e064e9efbc102afdc222"
-			}
-		},
-		{
-			module: "weather",
-			position: "top_right",
-			header: "Weather Forecast",
-			config: {
-				weatherProvider: "openweathermap",
-				type: "forecast",
-				location: "Chicago",
-				locationID: "4887398", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-				apiKey: "ac3461c3eaa4e064e9efbc102afdc222"
-			}
-		},
-		{
-			module: "newsfeed",
-			position: "bottom_bar",
-			config: {
-				feeds: [
-					{
-						title: "New York Times",
-						url: "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml"
-					}
-				],
-				showSourceTitle: true,
-				showPublishDate: true,
-				broadcastNewsFeeds: true,
-				broadcastNewsUpdates: true
-			}
-		},
+		// {
+		// 	module: "alert",
+		// },
+		// {
+		// 	module: "updatenotification",
+		// 	position: "top_bar"
+		// },
+		// {
+		// 	module: "clock",
+		// 	position: "top_left"
+		// },
+		// {
+		// 	module: "calendar",
+		// 	header: "US Holidays",
+		// 	position: "top_left",
+		// 	config: {
+		// 		calendars: [
+		// 			{
+		// 				fetchInterval: 7 * 24 * 60 * 60 * 1000,
+		// 				symbol: "calendar-check",
+		// 				url: "https://ics.calendarlabs.com/76/mm3137/US_Holidays.ics"
+		// 			}
+		// 		]
+		// 	}
+		// },
+		// {
+		// 	module: "compliments",
+		// 	position: "lower_third"
+		// },
+		// {
+		// 	module: "weather",
+		// 	position: "top_right",
+		// 	config: {
+		// 		weatherProvider: "openweathermap",
+		// 		type: "current",
+		// 		location: "Chicago",
+		// 		locationID: "4887398", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
+		// 		apiKey: ""
+		// 	}
+		// },
+		// {
+		// 	module: "weather",
+		// 	position: "top_right",
+		// 	header: "Weather Forecast",
+		// 	config: {
+		// 		weatherProvider: "openweathermap",
+		// 		type: "forecast",
+		// 		location: "Chicago",
+		// 		locationID: "4887398", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
+		// 		apiKey: ""
+		// 	}
+		// },
+		// {
+		// 	module: "newsfeed",
+		// 	position: "bottom_bar",
+		// 	config: {
+		// 		feeds: [
+		// 			{
+		// 				title: "New York Times",
+		// 				url: "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml"
+		// 			}
+		// 		],
+		// 		showSourceTitle: true,
+		// 		showPublishDate: true,
+		// 		broadcastNewsFeeds: true,
+		// 		broadcastNewsUpdates: true
+		// 	}
+		// },
 		{
 			module: 'MMM-BackgroundSlideshow',
 			position: 'fullscreen_below',
