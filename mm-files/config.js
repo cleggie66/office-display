@@ -113,9 +113,9 @@ let config = {
 					'modules/MMM-BackgroundSlideshow/images/',
 					'modules/MMM-BackgroundSlideshow/images/ashleigh',
 					'modules/MMM-BackgroundSlideshow/images/hopper',
-					'modules/MMM-BackgroundSlideshow/images/o-keefee',
+					'modules/MMM-BackgroundSlideshow/images/o-keeffe',
 					'modules/MMM-BackgroundSlideshow/images/peter-max',
-					'modules/MMM-BackgroundSlideshow/images/seurat',
+					'modules/MMM-BackgroundSlideshow/images/seurat'
 				],
 				transitionImages: true,
 				randomizeImageOrder: true
