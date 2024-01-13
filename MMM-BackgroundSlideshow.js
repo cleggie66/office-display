@@ -20,7 +20,7 @@ Module.register('MMM-BackgroundSlideshow', {
     // do not recurse into these subdirectory names when scanning.
     excludePaths: ['@eaDir'],
     // the speed at which to switch between images, in milliseconds
-    slideshowSpeed: 3 * 1 * 1000,
+    slideshowSpeed: 60 * 10 * 1000,
     // if true randomize image order, otherwise use sortImagesBy and sortImagesDescending
     randomizeImageOrder: true,
     // how to sort images: name, random, created, modified
