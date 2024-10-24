@@ -117,7 +117,8 @@ let config = {
 					"modules/MMM-BackgroundSlideshow/images/seurat",
 					"modules/MMM-BackgroundSlideshow/images/hudson-river-school",
 					"modules/MMM-BackgroundSlideshow/images/frederic-remington",
-					"modules/MMM-BackgroundSlideshow/images/unsplash"
+					"modules/MMM-BackgroundSlideshow/images/unsplash",
+					"modules/MMM-BackgroundSlideshow/images/paintings"
 				],
 				transitionImages: true,
 				randomizeImageOrder: true
